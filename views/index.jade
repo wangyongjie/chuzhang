@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .ui.container
+    br
+    br
+    select.ui.dropdown.param_one
+      option(value="201802") 201802
+      option(value="201801") 201801
+      option(value="201712") 201712
+    select.ui.dropdown.param_two
+      option(value="24") 预出
+      option(value="30") 全量
+      option(value="31") 增量
+    button.ui.button.gdf_submit 核查
+    span &nbsp;&nbsp;&nbsp;(数据导入较慢，请稍等几分钟)
+    h5.ui.horizontal.divider.header
+      i.tag.icon 
+      结果如下
+
+    div.result
