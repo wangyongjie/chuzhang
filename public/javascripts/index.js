@@ -100,11 +100,12 @@ $(function() {
         if(result.ok == '0') {
         	if(result.rows.length == 0) {
         		$(".result").append("<p>" + getTime() + "无波动异常的费项</p>")
+        		$(".result").append("<p>" + getTime() + "结束检查固定费异常波动</p>")
         	}else{
         		showTable("1", result.rows)
+	        	$(".result").append("<p>" + getTime() + "结束检查固定费异常波动</p>")
         		cb()
         	}
-        	$(".result").append("<p>" + getTime() + "结束检查固定费异常波动</p>")
         } else {   
       		$(".result").append("<p>程序出错</p>"); 
 		      $(".result").append("<p>" + result.log + "</p>"); 
